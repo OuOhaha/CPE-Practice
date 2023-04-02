@@ -1,16 +1,15 @@
 #include <iostream>
-#include <cmath>
+#include <cstdlib>
 
 int main() {
-    int a, b;
+    long long a, b;
     
-    //持續接收兩個地點資料
+    //持續接收兩地資料
     while (std::cin >> a >> b) 
     {
-
         //取距離絕對值後輸出答案
-        int diff = std::abs(a - b);
-        std::cout << diff << std::endl;
+        std::cout << std::abs(a - b) << std::endl;
     }
+    
     return 0;
 }
